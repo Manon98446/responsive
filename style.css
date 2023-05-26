@@ -1,0 +1,39 @@
+/*mobile*/
+body{
+    background-color: red;
+    font-size: 14px;
+}
+div#small,div#medium , div#large{
+    display: block;
+    width: 100%;
+}
+/*for tablet*/
+@media only screen and (min-width:410px){
+    body{
+        background-color: green;
+        font-size: 18px;
+        display:flex;
+        flex-wrap: wrap;
+    }
+    div#small {
+        width:66%;
+    }
+    div#medium{
+        width:33%
+    }
+    div#large{
+        display: 100%;
+    }
+}
+/*for desktop*/
+@media only screen and (min-width: 768px){
+    body{
+        background-color: blue;
+        font-size: 20px;
+        display: flex;
+    }
+    div#medium , div#small, div#large{
+        width:33%;
+    }
+    
+}
